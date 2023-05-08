@@ -9,6 +9,7 @@ const FormInput = ({
   required,
   disabled,
   className,
+  ariaLabel,
 }) => {
   return (
     <input
@@ -21,6 +22,7 @@ const FormInput = ({
       placeholder={placeholder}
       required={required}
       disabled={disabled}
+      aria-label={ariaLabel}
     />
   );
 };
