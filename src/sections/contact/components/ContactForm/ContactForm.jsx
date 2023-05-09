@@ -2,6 +2,7 @@ import { useState } from "react";
 import FormInput from "../../../../components/formInput";
 import { contactFormModel } from "../../../../models/contactForm.model";
 import "./ContactForm.css";
+import { Button } from "../../../../components/Button/Button";
 
 const initialFormValues = {
   firstName: "",
@@ -49,9 +50,14 @@ export const ContactForm = () => {
           );
         }
       )}
-      <button type="submit" className="submitButton">
-        SUBMIT NOW
-      </button>
+      <Button
+        type="submit"
+        mode="button"
+        variant="dark"
+        ariaLabel="submit contact form"
+      >
+        submit now
+      </Button>
     </form>
   );
 };

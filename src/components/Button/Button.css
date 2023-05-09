@@ -1,0 +1,42 @@
+.button,
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  line-height: 17px;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  cursor: pointer;
+
+  &.dark {
+    border: 1.5px solid #ed4c5c;
+    background-color: #ed4c5c;
+    color: #fff;
+  }
+
+  &.light {
+    border: 1.5px solid #fff;
+    background-color: #fff;
+    color: #ed4c5c;
+  }
+}
+
+.link,
+.link-button {
+  text-decoration: none;
+}
+
+.link {
+  line-height: 150%;
+  cursor: pointer;
+
+  &.dark {
+    color: #ed4c5c;
+  }
+
+  &.light {
+    color: #ffffff;
+  }
+}

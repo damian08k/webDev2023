@@ -18,7 +18,7 @@
 }
 
 .topbar.scroll {
-  background-color: #D5204799;
+  background-color: #d5204799;
 }
 
 .logo-container {
@@ -43,11 +43,6 @@
   align-items: center;
   gap: 20px;
   font-size: 1.4rem;
-
-  & .link {
-    text-decoration: none;
-    color: white;
-  }
 }
 
 .menu.show {
