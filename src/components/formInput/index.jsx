@@ -1,12 +1,19 @@
-import './index.css'
+import "./index.css";
 
-const FormInput = ({ type, name, value, onChange, placeholder, required, disabled, style }) => {
-
-  const formStyle = style === 'full' ? 'formInput formInput-full' : 'formInput formInput-half';
-
+const FormInput = ({
+  type,
+  name,
+  value,
+  onChange,
+  placeholder,
+  required,
+  disabled,
+  className,
+  ariaLabel,
+}) => {
   return (
     <input
-      className={formStyle}
+      className={`formInput ${className}`}
       type={type}
       id={name}
       name={name}
@@ -15,6 +22,7 @@ const FormInput = ({ type, name, value, onChange, placeholder, required, disable
       placeholder={placeholder}
       required={required}
       disabled={disabled}
+      aria-label={ariaLabel}
     />
   );
 };

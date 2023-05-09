@@ -1,5 +1,4 @@
 #root {
-  
   min-height: 100vh;
 
   & * {
@@ -9,6 +8,8 @@
 
 .App {
   margin: 0 auto;
+  /* I added this to enable the creation of a mobile version of the app  */
+  overflow: hidden;
 }
 
 h1 {
